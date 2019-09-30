@@ -1,6 +1,7 @@
 # GreenClothaWay
 
-
+Django: https://docs.djangoproject.com/en/2.2/intro/install/
+MySQL: https://dev.mysql.com/downloads/workbench/
 
 - C# wpf
 => Easy, MVC, nur auf windows
@@ -14,3 +15,7 @@
 => Easy, MVC, cross platform
 => Keine lust auf web, aber crossplatform.
 => Front-end muss für iphone, android,... angepasst werden
+
+Zeno:
+- python
+
