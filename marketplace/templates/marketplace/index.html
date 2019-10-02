@@ -1,21 +1,5 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="{% static "assets/fonts/font-awesome.min.css" %}">
-    <link rel="stylesheet" href="{% static "assets/fonts/simple-line-icons.min.css" %}">
-    <link rel="stylesheet" href="{% static "assets/css/canito-detalle-producto.css" %}">
-    <link rel="stylesheet" href="{% static "assets/css/Filter.css" %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="{% static "assets/css/smoothproducts.css" %}">
-</head>
-
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><a class="navbar-brand logo" href="index.html">GreenClothaWay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -140,11 +124,11 @@
             <p>© 2018 Copyright Text</p>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/smoothproducts.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="{% static "assets/js/smoothproducts.min.js" %}"></script>
+    <script src="{% static "assets/js/theme.js" %}"></script>
 </body>
 
 </html>
