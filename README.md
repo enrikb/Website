@@ -21,4 +21,13 @@ Finally you must execute this command:
 ```
 python manage.py runserver
 ```
+
+The default port is 8000, so you can access to the website with the address:
+
+```
+http://localhost:8000
+or
+http://127.0.0.1:8000
+```
+
 Have fun!
