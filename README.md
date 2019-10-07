@@ -13,9 +13,10 @@ pip install django
 You must then install PostgreSQL [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
 If you are asked to install pgAdmin 4, do it, we will need it.
 
-Open pgAdmin 4 and choose the default server named "PostgreSQL 11".
-You can create a new role named "admin" with all rights (superadmin).
-Then you'll need to create the "greenclothaway" database with "admin" as owner.
+Open pgAdmin 4 and choose the default server named "PostgreSQL 11",
+then you can create a new role named "admin" with all rights (superadmin).
+
+Finally you'll need to create the "greenclothaway" database with "admin" as owner.
 
 Reopen the terminal and install pthe psycopg2 package (it allows you to use the database you configured).
 ```
