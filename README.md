@@ -29,6 +29,12 @@ You can then clone this repo and go into it with:
 cd Website/
 ```
 
+To generate the database and needed tables, use this command:
+
+```
+python manage.py migrate
+```
+
 Finally you must execute this command:
 
 ```
