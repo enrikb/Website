@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
--   [Flashcard Community - Software Requirements Specification](#flashcard-community---software-requirements-specification)
+-   [GreenClothaWay - Software Requirements Specification](#GreenClothaWay---software-requirements-specification)
 
     -   [Table of Contents](#table-of-contents)
 
@@ -189,14 +189,14 @@ The product description form includes information about size, form, colour, cond
 -   [Insert clothes](https://greenclothaway.eu/....)
 
 
-#### 3.2.4 Flashcards
+#### 3.2.4 Buy clothes
 
 A flashcard data is composed of a virtual front- and backpage. For a better overview, flashcards can only be accessed from a individual flashcard boxes.
 According use cases are:
 
 -   [Flashcards](https://github.com/phoenixfeder/fc-com/blob/master/UseCases/FlashCard/FlashCard.md)
 
-#### 3.2.5 Statistics
+#### 3.2.5 Shopping cart
 
 Statistics contains information about the learning progress of individual flashcard boxes and is saved per single user, not per box.
 
