@@ -133,7 +133,11 @@ They have only to pay shipping costs or if it´s possible they can collect their
 
 Our Use-Case-Diagram
 
-![UseCaseDiagram](https://github.com/GreenClothaWay/<----->)
+<object data="https://github.com/GreenClothaWay/Website/blob/master/marketplace/static/assets/pdf/GCW_UML.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/GreenClothaWay/Website/blob/master/marketplace/static/assets/pdf/GCW_UML.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/GreenClothaWay/Website/blob/master/marketplace/static/assets/pdf/GCW_UML.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 ### 2.3 User characteristics
 
