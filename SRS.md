@@ -133,9 +133,9 @@ They have only to pay shipping costs or if it´s possible they can collect their
 
 Our Use-Case-Diagram
 
-<object data="https://rawcdn.githack.com/GreenClothaWay/Website/9f5d7c4713f9d94dab31c868609fd0ab5fb35d90/marketplace/static/assets/pdf/GCW_UML.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://rawcdn.githack.com/GreenClothaWay/Website/9f5d7c4713f9d94dab31c868609fd0ab5fb35d90/marketplace/static/assets/pdf/GCW_UML.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://rawcdn.githack.com/GreenClothaWay/Website/9f5d7c4713f9d94dab31c868609fd0ab5fb35d90/marketplace/static/assets/pdf/GCW_UML.pdf">Download PDF</a>.</p>
+<object data="https://raw.githack.com/GreenClothaWay/Website/master/marketplace/static/assets/pdf/GCW_UML.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://raw.githack.com/GreenClothaWay/Website/master/marketplace/static/assets/pdf/GCW_UML.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://raw.githack.com/GreenClothaWay/Website/master/marketplace/static/assets/pdf/GCW_UML.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
