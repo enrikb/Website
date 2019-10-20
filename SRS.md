@@ -27,25 +27,22 @@
 
         -   [3.1 Functionality – Data Backend](#31-functionality--data-backend)
 
-            -   [3.1.1 Read data given over API endpoints](#311-read-data-given-over-api-endpoints)
-            -   [3.1.2 Parse data](#312-parse-data)
-            -   [3.1.3 Provide data](#313-provide-data)
+            -   [3.1.1 Communication between frontend and backend](#311-communication-between-frontend-and-backend)
+            -   [3.1.2 Store and get data](#312-store-and-get-data)
 
         -   [3.2 Functionality – User Interface](#32-functionality--user-interface)
 
             -   [3.2.1 User system](#321-user-system)
-            -   [3.2.3 Flashcard boxes](#323-flashcard-boxes)
-            -   [3.2.4 Flashcards](#324-flashcards)
-            -   [3.2.5 Statistics](#325-statistics)
+            -   [3.2.2 Insert clothes](#322-insert-clothes)
+            -   [3.2.3 Buy clothes](#323-buy-clothes)
+            -   [3.2.4 Shopping cart](#324-shoping-cart)
 
         -   [3.3 Usability](#33-usability)
 
         -   [3.4 Reliability](#34-reliability)
 
             -   [3.4.1 Availability](#341-availability)
-            -   [3.4.2 MTBF, MTTR](#342-mtbf-mttr)
-            -   [3.4.3 Accuracy](#343-accuracy)
-            -   [3.4.4 Bug classes](#344-bug-classes)
+            -   [3.4.2 Bug classes](#344-bug-classes)
 
         -   [3.5 Performance](#35-performance)
 
@@ -59,9 +56,7 @@
         -   [3.7 Design Constraints](#37-design-constraints)
 
             -   [3.7.1 Development tools](#371-development-tools)
-            -   [3.7.2 Spring Boot](#372-spring-boot)
-            -   [3.7.3 ReactJS](#373-reactjs)
-            -   [3.7.4 Supported Platforms](#374-supported-platforms)
+            -   [3.7.2 Supported Platforms](#374-supported-platforms)
 
         -   [3.8 Online User Documentation and Help System Requirements](#38-online-user-documentation-and-help-system-requirements)
 
@@ -178,17 +173,17 @@ Sign Up:
 Log In:
 -   [Log In](https://greenclothaway.eu/.....)
 
-#### 3.2.3 Insert clothes 
+#### 3.2.2 Insert clothes 
 
 Inserting clothes is very easy. Take some pictures from your garment and fill in the product description form. 
 The product description form includes information about size, form, colour, condition, etc.
 -   [Insert clothes](https://greenclothaway.eu/....)
 
 
-#### 3.2.4 Buy clothes
+#### 3.2.3 Buy clothes
 
 
-#### 3.2.5 Shopping cart
+#### 3.2.4 Shopping cart
 
 
 ### 3.3 Usability
@@ -238,7 +233,7 @@ We classify bugs like the following:
 -   YouTrack: Project planning tool
 
 
-#### 3.7.4 Supported Platforms
+#### 3.7.2 Supported Platforms
 
 Since FlashCardCommunity will be a web application the user only needs a modern web browser and a stable internet connection. The current versions of Mozilla Firefox, Google Chrome, Opera, Edge and even IE down to version 9 will be supported!
 
