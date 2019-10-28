@@ -23,10 +23,10 @@ This use case allows the user to display specific information abou one product.
 - User clicks on a product
 - Information will be shown
 #### 2.1.1 Activity Diagram
-![SpecificProductInformationUseCase](tba)
+![SpecificProductInformationUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/SpecificProductInformationUseCase.PNG)
 #### 2.1.2 Mock up
 ##### Product Information
-![SpecificProductInformationMockup](tba)
+![SpecificProductInformationMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/SpecificProductInformationMockup.jpeg)
 ### 2.2 Alternative Flows
 n/a
 
@@ -34,10 +34,8 @@ n/a
 n/a
 
 ## 4. Preconditions
-User has to be logged in.
-
+n/a
 ## 5. Postconditions
-After confirming the data its stored on the backend.
-
+n/a
 ## 6. Extension Points
 n/a
