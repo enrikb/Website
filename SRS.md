@@ -33,9 +33,10 @@
         -   [3.2 Functionality – User Interface](#32-functionality--user-interface)
 
             -   [3.2.1 User system](#321-user-system)
-            -   [3.2.2 Insert clothes](#322-insert-clothes)
-            -   [3.2.3 Buy clothes](#323-buy-clothes)
-            -   [3.2.4 Shopping cart](#324-shoping-cart)
+            -   [3.2.2 Specific Product Information](#322-specific-product-information)
+            -   [3.2.3 Insert clothes](#323-insert-clothes)
+            -   [3.2.4 Buy clothes](#324-buy-clothes)
+            -   [3.2.5 Shopping cart](#325-shoping-cart)
 
         -   [3.3 Usability](#33-usability)
 
@@ -170,20 +171,26 @@ At registration, the data provided by the user is stored in the backend. After r
 
 Sign Up:
 -   [Sign UP](https://greenclothaway.eu/.....)
+-   [UC](https://github.com/GreenClothaWay/Website/blob/master/doc/uc/CreateAccountUseCase.md) 
+
 Log In:
 -   [Log In](https://greenclothaway.eu/.....)
 
-#### 3.2.2 Insert clothes 
+#### 3.2.2 Specific Product Information
+
+-   [UC](https://github.com/GreenClothaWay/Website/blob/master/doc/uc/SpecificProductInformationUseCase.md)
+
+#### 3.2.3 Insert clothes 
 
 Inserting clothes is very easy. Take some pictures from your garment and fill in the product description form. 
 The product description form includes information about size, form, colour, condition, etc.
 -   [Insert clothes](https://greenclothaway.eu/....)
 
 
-#### 3.2.3 Buy clothes
+#### 3.2.4 Buy clothes
 
 
-#### 3.2.4 Shopping cart
+#### 3.2.5 Shopping cart
 
 
 ### 3.3 Usability
