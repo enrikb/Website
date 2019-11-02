@@ -1,6 +1,8 @@
 # Created by zeno at 02.11.19
-Feature: #Enter feature name here
+Feature: TestFeature
   # Enter feature description here
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: est if behave works
+    Given test got started
+    When bla
+    Then tadaaa
