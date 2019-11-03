@@ -8,19 +8,20 @@ def step_impl(context):
     """
     :type context: behave.runner.Context
     """
-    print('test started\n')
+    pass
 
 
-@when("bla")
+@when("implentation works")
 def step_impl(context):
     """
     :type context: behave.runner.Context
     """
-    print('bla\n')
+    assert True is not False
 
-@then("tadaaa")
+
+@then("test pass")
 def step_impl(context):
     """
     :type context: behave.runner.Context
     """
-    print('tadaaaaaa\n')
+    assert context.failed is False

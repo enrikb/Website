@@ -2,7 +2,7 @@
 Feature: TestFeature
   # Enter feature description here
 
-  Scenario: est if behave works
+  Scenario: Test if behave works
     Given test got started
-    When bla
-    Then tadaaa
+    When implentation works
+    Then test pass
