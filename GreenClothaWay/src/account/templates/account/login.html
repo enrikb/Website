@@ -1,0 +1,25 @@
+﻿{% extends 'marketplace/layout.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+<main class="page login-page">
+    <section class="clean-block clean-form dark">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-info">Login</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+            </div>
+        <form method="post">
+            {% csrf_token %}
+            {% for field in login_form %}
+                <p>
+                    {% bootstrap_field field %}
+                </p>
+            {% endfor %}
+       <button class="btn btn-primary btn-block" type="submit">Login</button>
+            <a class="float-right" href="{% url 'register' %}" style="padding-top: 5px;">Don´t have an account ? Sign up</a>
+        </form>
+       </div>
+    </section>
+</main>
+{% endblock %}
