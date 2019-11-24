@@ -1,0 +1,6 @@
+.text-form-center{
+    margin-top: calc((1.5em + .75rem + 2px)/4);
+    margin-bottom: 0;
+    text-align: left!important;
+    height: calc((1.5em + .75rem + 2px)/2);
+}

@@ -45,8 +45,8 @@ def login_view(request):
                 login(request, user)
                 return redirect('index')  # Weiterleitung wenn user angemeldet wird
     else:
-        form = LoginForm()
-    context['login_form'] = form
+        login_form = LoginForm()
+    context['login_form'] = login_form
     return render(request, 'account/login.html', context)
 
 
@@ -69,6 +69,7 @@ def profile_view(request):
         form = AccountUpdateForm(request.POST, instance=request.user)
         if form.is_valid():
             form.save()
+
     else:
         form = AccountUpdateForm(
             initial={
@@ -87,3 +88,33 @@ def profile_view(request):
     context['account_form'] = form
 
     return render(request, 'account/profile.html', context)
+
+
+@login_required
+def profile_edit_view(request):
+    if not request.user.is_authenticated:
+        return redirect("login")
+    context = {}
+    if request.method == "POST":
+        form = AccountUpdateForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
+    else:
+        form = AccountUpdateForm(
+            initial={
+                "email": request.user.email,
+                "username": request.user.username,
+                "title": request.user.title,
+                "first_name": request.user.first_name,
+                "last_name": request.user.last_name,
+                "street": request.user.street,
+                "plz": request.user.plz,
+                "city": request.user.city,
+                "country": request.user.country,
+                "housenumber": request.user.housenumber,
+            }
+        )
+    context['account_form'] = form
+
+    return render(request, 'account/edit.html', context)

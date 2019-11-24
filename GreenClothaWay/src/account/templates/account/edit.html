@@ -2,6 +2,9 @@
 {% load static %}
 {% load bootstrap4 %}
 {% block content %}
+<style>
+
+</style>
 <main class="page blog-post-list">
     <section class="clean-block clean-blog-list dark">
         <div class="container">
@@ -11,8 +14,8 @@
             </div>
             <div class="block-content" style="padding: 7px;padding-top: 7px;">
                 <div class="row">
-                    <div class="col-lg-5"><img class="rounded img-fluid" src="tech/image4.jpg" style="padding: 40px;"/></div>
-                      <div class="col-lg-7">
+                    <div class="col-lg-5"><img class="rounded img-fluid" src="tech/image4.jpg" style="padding: 40px;" /></div>
+                   <div class="col-lg-7">
                         <h3 style="margin: 10px 10px;">{{request.user.first_name}} {{request.user.last_name}}</h3>
                         <div class="info"></div>
                         <div class="row">
@@ -49,87 +52,95 @@
                 </div>
                 <div class="block-content" style="padding: 7px;padding-top: 7px;">
                     <h3 style="margin: 10px 10px;">Profile Information</h3>
+                     <form method="post">
+                              {% csrf_token %}
                     <div class="row">
                         <div class="col">
                             <div class="row">
-                                <div class="col">
-                                    <p class="text-left">Username</p>
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">Username</p>
                                 </div>
                                 <div class="col">
-                                    <p class="text-left">{{request.user.username}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-left">Email</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.email}}</p>
+                                    {% bootstrap_field account_form.username show_label=False %}
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <p class="text-left">First Name</p>
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">Email</p>
                                 </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.first_name}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-left">Last Name</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.last_name}}</p>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.email show_label=False %}
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col" style="height: auto;"><a href="{% url 'profile/edit' %}"><br />Edit your Profile Information<br /><br /></a></div>
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">First Name</p>
+                                </div>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.first_name show_label=False %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">Last Name</p>
+                                </div>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.last_name show_label=False %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                 <div class="col-lg-6">
+                                    <button class="btn btn-primary btn-block" type="submit">Save Changes</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="btn btn-primary btn-block" href="{% url 'profile' %}">Cancel</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="row">
-                                <div class="col">
-                                    <p class="text-left">Street</p>
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">Street</p>
                                 </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.street}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-left">House Number</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.housenumber}}</p>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.street show_label=False %}
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <p class="text-left">Zip Code</p>
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">House Number</p>
                                 </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.plz}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-left">City</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.city}}</p>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.housenumber show_label=False %}
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <p class="text-left">Country</p>
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">Zip Code</p>
                                 </div>
-                                <div class="col">
-                                    <p class="text-left">{{request.user.country}}</p>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.plz show_label=False %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">City</p>
+                                </div>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.city show_label=False %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="text-form-center">Country</p>
+                                </div>
+                                <div class="col-lg-8">
+                                    {% bootstrap_field account_form.country show_label=False %}
                                 </div>
                             </div>
                         </div>
                     </div>
+                     </form>
                 </div>
             </div>
             <div class="block-content" style="padding: 7px;">
