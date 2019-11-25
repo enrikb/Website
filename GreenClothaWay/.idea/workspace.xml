@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b2f1d8f-4ed1-4179-984b-4fce27835577" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/django-admin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/pip3.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/sqlformat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Website.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Include/Python-ast.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Include/Python.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Include/abstract.h" beforeDir="false" />
@@ -124,7 +140,7 @@
       <change beforePath="$PROJECT_DIR$/venv/Scripts/activate_this.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.7.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/pinax-admin.exe" beforeDir="false" />
@@ -1201,7 +1217,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573301700916</updated>
       <workItem from="1574675515613" duration="84000" />
-      <workItem from="1574675611085" duration="252000" />
+      <workItem from="1574675611085" duration="1092000" />
     </task>
     <servers>
       <YouTrack url="http://greenclothaway.myjetbrains.com/youtrack">
