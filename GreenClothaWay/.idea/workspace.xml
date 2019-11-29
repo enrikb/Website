@@ -2,28 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b2f1d8f-4ed1-4179-984b-4fce27835577" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/django-admin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/django-admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python3.7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/sqlformat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SRS.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.youtrack.notifications" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -86,6 +86,7 @@
       <updated>1573301700916</updated>
       <workItem from="1574675515613" duration="84000" />
       <workItem from="1574675611085" duration="2084000" />
+      <workItem from="1575030275762" duration="4321000" />
     </task>
     <servers>
       <YouTrack url="http://greenclothaway.myjetbrains.com/youtrack">
