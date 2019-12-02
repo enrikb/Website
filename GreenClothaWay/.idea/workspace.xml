@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b2f1d8f-4ed1-4179-984b-4fce27835577" name="Default Changelist" comment="">
+    <list default="true" id="ad458d98-f6f9-4000-8774-fe09fc4c1e65" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Website.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/../SRS.md" beforeDir="false" />
->>>>>>> b53971ffd13581d553723bb9deb86b24626fb074
+      <change beforePath="$PROJECT_DIR$/src/inseration/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inseration/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/marketplace/static/assets/css/canito-detalle-producto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/marketplace/templates/marketplace/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/marketplace/templates/marketplace/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/marketplace/templates/marketplace/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/marketplace/templates/marketplace/layout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,56 +21,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1TNXoQfevUjeZvFBLN54SC9VeiU" />
+  <component name="ProjectId" id="1UQAmIq2PV25LE15rKoS0R0sZ9u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.jetbrains.youtrack.notifications" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\src\account\templates\account" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\src\account" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\website\account\templates\account" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\website\marketplace" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\website\account" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\src" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\src\website" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\src\marketplace" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\website\account\templates\account" />
-      <recent name="C:\Users\D0284530\PycharmProjects\GreenClothaWay\website\account" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,24 +46,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b2f1d8f-4ed1-4179-984b-4fce27835577" name="Default Changelist" comment="" />
-      <created>1573301700916</created>
+      <changelist id="ad458d98-f6f9-4000-8774-fe09fc4c1e65" name="Default Changelist" comment="" />
+      <created>1575278602455</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573301700916</updated>
-      <workItem from="1574675515613" duration="84000" />
-      <workItem from="1574675611085" duration="2084000" />
-      <workItem from="1575030275762" duration="4321000" />
+      <updated>1575278602455</updated>
     </task>
-    <servers>
-      <YouTrack url="http://greenclothaway.myjetbrains.com/youtrack">
-        <option name="defaultSearch" value="" />
-        <username>nicodiefenbacher</username>
-      </YouTrack>
-    </servers>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
