@@ -25,7 +25,7 @@ SECRET_KEY = '6vqq+7!i*i4y4##fw2@rralcnc%d#_so$fy@m-g01cs@d0r*8k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['greenclothaway.eu', 'localhost', '78.46.122.92', '2a01:4f8:c2c:3a34::1']
+ALLOWED_HOSTS = ['www.greenclothaway.eu', 'greenclothaway.eu', 'localhost', '78.46.122.92', '2a01:4f8:c2c:3a34::1']
 
 
 # Application definition
