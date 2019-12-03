@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad458d98-f6f9-4000-8774-fe09fc4c1e65" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Website.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inseration/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inseration/templates/inseration/insert.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inseration/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inseration/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/marketplace/static/assets/css/canito-detalle-producto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/marketplace/templates/marketplace/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/marketplace/templates/marketplace/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/marketplace/templates/marketplace/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/marketplace/templates/marketplace/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inseration/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inseration/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +16,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1UQAmIq2PV25LE15rKoS0R0sZ9u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

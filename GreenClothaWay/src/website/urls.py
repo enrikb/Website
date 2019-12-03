@@ -34,6 +34,10 @@ from marketplace.views import (
     marketplace_view,
     cart_view
 )
+
+from inseration.views import (
+    insert_view,
+)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', register_view, name="register"),
@@ -46,5 +50,6 @@ urlpatterns = [
     path('shoppingcart/', cart_view, name='cart'),
     path('profile/', profile_view, name='profile'),
     path('profile/edit/', profile_edit_view, name='profile/edit'),
-    path(r'^messages/', include('django_messages.urls')),
+    path('messages/', include('django_messages.urls')),
+    path('insert/', insert_view, name='insert'),
 ]

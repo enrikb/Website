@@ -1,18 +1,18 @@
 from datetime import timezone, datetime
-
+from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-from django.db.models.signals import post_save
-from django.dispatch import receiver
+
+AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
 
 class InserationManager(models.Manager):
 
-    def create_inseration(self, title, username, description, images, category, size):
+    def create_inseration(self, user, title, description, images, category, subcategory, size):
         if not title:
             raise ValueError("Users must have an email address")
-        if not username:
-            raise ValueError("Users must have a username")
+        if not user:
+            raise ValueError("Users must have a user")
         if not images:
             raise ValueError("Users must have a password")
         if not category:
@@ -21,11 +21,12 @@ class InserationManager(models.Manager):
             raise ValueError("Users must have an first name")
 
         inseration = self.model(
-            username=username,
+            user=user,
             title=title,
             description=description,
             images=images,
             category=category,
+            subcategory=subcategory,
             size=size,
             inserted_at=datetime.now,
         )
@@ -34,32 +35,37 @@ class InserationManager(models.Manager):
         return inseration
 
 
+class Inseration(models.Model):
+    inserter = models.ForeignKey(AUTH_USER_MODEL, related_name='inserted_object', verbose_name=_("Inserter"),
+                                 on_delete=models.CASCADE)
+    title = models.CharField(max_length=50,null=False, blank=False)
+    description = models.TextField(max_length=500,null=False, blank=False)
+    images = models.ImageField(max_length=50,null=False, blank=False)
+    subcategory = models.CharField(max_length=50,null=False, blank=False)
+    category = models.CharField(max_length=50,null=False, blank=False)
+    size = models.CharField(max_length=50, null=False, blank=False)
 
-class Account(models.Model):
-    title = models.CharField(max_length=50)
-    description = models.TextField(max_length=500)
-    images = models.ImageField()
-    category = models.CharField()
-    size = models.DateTimeField(verbose_name="date joined", auto_now_add=True)
-
-    MALE_OR_FEMALE = (
-        ('MA', 'Male'),
-        ('FE', 'Female'),
-    )
+    inserted_at = models.DateTimeField(_("inserted_at"), auto_now_add=True)
 
     objects = InserationManager()
-    REQUIRED_FIELDS = (
-        'username', 'password',
-        'title', 'first_name', 'last_name',
-        'street', 'plz',
-        'city', 'country',
-        'housenumber',)
 
-    def __str__(self):
-        return self.email
+    def save(self, **kwargs):
+        if not self.id:
+            self.inserted_at = timezone.now()
+        super(Inseration, self).save(**kwargs)
 
-    def has_perm(self, perm, obj=None):
-        return self.is_admin
+    def inseration_count_for(user):
+        """
+        returns the number of unread messages for the given user but does not
+        mark them seen
+        """
+        return Inseration.objects.filter(inserter=user).count()
 
-    def has_module_perms(self, app_label):
-        return True
+    class Meta:
+        ordering = ['-inserted_at']
+        verbose_name = _("Insertion")
+        verbose_name_plural = _("Insertions")
+
+
+
+
