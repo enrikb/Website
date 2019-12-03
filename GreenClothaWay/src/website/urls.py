@@ -46,5 +46,5 @@ urlpatterns = [
     path('shoppingcart/', cart_view, name='cart'),
     path('profile/', profile_view, name='profile'),
     path('profile/edit/', profile_edit_view, name='profile/edit'),
-    path(r'^messages/', include('django_messages.urls')),
+    path('messages/', include('django_messages.urls')),
 ]
