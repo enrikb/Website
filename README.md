@@ -18,7 +18,7 @@ then you can create a new role named "admin" with all rights (superadmin).
 
 Finally you'll need to create the "greenclothaway" database with "admin" as owner.
 
-Reopen the terminal and install pthe psycopg2 package (it allows you to use the database you configured).
+Reopen the terminal and install the psycopg2 package (it allows you to use the database you configured).
 ```
 pip install django psycopg2
 ```
