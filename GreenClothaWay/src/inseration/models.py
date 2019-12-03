@@ -40,7 +40,7 @@ class Inseration(models.Model):
                                  on_delete=models.CASCADE)
     title = models.CharField(max_length=50,null=False, blank=False)
     description = models.TextField(max_length=500,null=False, blank=False)
-    images = models.ImageField(max_length=50,null=False, blank=False)
+    images = models.ImageField(upload_to='images/',max_length=50,null=False, blank=False)
     subcategory = models.CharField(max_length=50,null=False, blank=False)
     category = models.CharField(max_length=50,null=False, blank=False)
     size = models.CharField(max_length=50, null=False, blank=False)

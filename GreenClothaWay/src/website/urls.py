@@ -51,8 +51,6 @@ urlpatterns = [
     path('profile/', profile_view, name='profile'),
     path('profile/edit/', profile_edit_view, name='profile/edit'),
     path('messages/', include('django_messages.urls')),
-<<<<<<< HEAD
     path('insert/', insert_view, name='insert'),
-=======
->>>>>>> fd698ffd4563091a02ba424b1ba5fbabddb39f44
+
 ]
