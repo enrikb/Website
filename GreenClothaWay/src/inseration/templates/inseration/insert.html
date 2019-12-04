@@ -1,40 +1,50 @@
 {% extends 'marketplace/layout.html' %}
 {% load static %}
 {% load bootstrap4 %}
-{% block content %} <main class="page pricing-table-page">
-        <section>
-            <form method="post">
-            <div>
-                <div class="container" style="margin-top: 20px;">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-12"><img class="img-thumbnail img-fluid center-block" src="assets/img/mil_hojas_web_2000x.jpg"></div>
+{% block content %}
+<main class="page pricing-table-page">
+    <section>
+        <form method="post">
+            <div class="container" style="margin-top: 20px;">
+                <div class="block-heading" style="padding-top: 30px;margin: 10px 0px;">
+                    <h2 class="text-left text-info">Give your clothes away</h2>
+                    <p class="text-left" style="margin-bottom: 20px;">Insert your old clothes to reduce CO²</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <h2>Select a Title</h2>
+                        {% bootstrap_field insert_form.title show_label=False %}
+                        <h3>Write a short Description</h3>
+                        {% bootstrap_field insert_form.description show_label=False %}
+
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select a size</h4>
+                                {% bootstrap_field insert_form.size show_label=False %}
                             </div>
-                            <div class="row">
-                                <div class="col-6 col-sm-6 col-md-6"><img class="img-thumbnail img-fluid center-block" src="assets/img/descarga.jpg"></div>
-                                <div class="col-6 col-sm-6 col-md-6"><img class="img-thumbnail img-fluid center-block" src="assets/img/descarga.jpg"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 col-sm-6 col-md-6 offset-3"><img class="img-thumbnail img-fluid center-block" src="assets/img/torta-de-milhojas.jpg"></div>
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select images</h4>
+                                {% bootstrap_field insert_form.images show_label=False %}
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <h2>Select a Title</h2>
-                            {% bootstrap_field insert_form.title show_label=False %}
-                            <h2>Write a short Description</h2>
-                            {% bootstrap_field insert_form.description show_label=False %}
-                            <h2>Select a size</h2>
-                             {% bootstrap_field insert_form.size show_label=False %}
-                            <h2>Select a category</h2>
-                             {% bootstrap_field insert_form.category show_label=False %}
-                            <h2>Select a subcategory</h2>
-                             {% bootstrap_field insert_form.subcategory show_label=False %}
-                            <h2 class="text-center text-success"><i class="fa fa-dollar"></i>&nbsp;CLP 22.500<br><br><br></h2><button class="btn btn-danger btn-lg center-block" type="button"><i class="fa fa-cart-plus"></i> Añadir al Carrito</button></div>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select a category</h4>
+                                {% bootstrap_field insert_form.category show_label=False %}
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select a category</h4>
+                                {% bootstrap_field insert_form.subcategory show_label=False %}
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit" style="margin-bottom: 20px ">
+                            Insert
+                        </button>
                     </div>
                 </div>
             </div>
-                </form>
-        </section>
-    </main>
+            </div>
+        </form>
+    </section>
+</main>
 {% endblock %}

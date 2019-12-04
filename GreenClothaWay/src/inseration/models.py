@@ -5,6 +5,8 @@ from django.db import models
 
 AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
+CATEGORY_CHOICES = []
+
 
 class InserationManager(models.Manager):
 
@@ -38,11 +40,11 @@ class InserationManager(models.Manager):
 class Inseration(models.Model):
     inserter = models.ForeignKey(AUTH_USER_MODEL, related_name='inserted_object', verbose_name=_("Inserter"),
                                  on_delete=models.CASCADE)
-    title = models.CharField(max_length=50,null=False, blank=False)
-    description = models.TextField(max_length=500,null=False, blank=False)
-    images = models.ImageField(upload_to='images/',max_length=50,null=False, blank=False)
-    subcategory = models.CharField(max_length=50,null=False, blank=False)
-    category = models.CharField(max_length=50,null=False, blank=False)
+    title = models.CharField(max_length=50, null=False, blank=False)
+    description = models.TextField(max_length=500, null=False, blank=False)
+    images = models.ImageField(upload_to='images/', max_length=50, null=False, blank=False)
+    subcategory = models.CharField(max_length=50, null=False, blank=False)
+    category = models.CharField(max_length=50, null=False, blank=False, choices=CATEGORY_CHOICES)
     size = models.CharField(max_length=50, null=False, blank=False)
 
     inserted_at = models.DateTimeField(_("inserted_at"), auto_now_add=True)
@@ -65,7 +67,4 @@ class Inseration(models.Model):
         ordering = ['-inserted_at']
         verbose_name = _("Insertion")
         verbose_name_plural = _("Insertions")
-
-
-
 
