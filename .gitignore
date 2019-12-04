@@ -94,4 +94,7 @@ local_settings.py
 db.sqlite3
 
 ## venv ##
-/GreenClothaWay/venv/
+/GreenClothaWay/src/venv/
+
+## static ##
+/GreenClothaWay/src/static/
