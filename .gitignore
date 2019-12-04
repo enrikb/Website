@@ -98,3 +98,6 @@ db.sqlite3
 
 ## static ##
 /GreenClothaWay/src/static/
+
+## .idea ##
+/GreenClothaWay/.idea/
