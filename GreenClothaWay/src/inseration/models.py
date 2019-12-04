@@ -5,6 +5,8 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
+CATEGORY_CHOICES = []
+
 
 class InserationManager(models.Manager):
 
@@ -34,6 +36,18 @@ class InserationManager(models.Manager):
         return inseration
 
 
+<<<<<<< HEAD
+=======
+class Inseration(models.Model):
+    inserter = models.ForeignKey(AUTH_USER_MODEL, related_name='inserted_object', verbose_name=_("Inserter"),
+                                 on_delete=models.CASCADE)
+    title = models.CharField(max_length=50, null=False, blank=False)
+    description = models.TextField(max_length=500, null=False, blank=False)
+    images = models.ImageField(upload_to='images/', max_length=50, null=False, blank=False)
+    subcategory = models.CharField(max_length=50, null=False, blank=False)
+    category = models.CharField(max_length=50, null=False, blank=False, choices=CATEGORY_CHOICES)
+    size = models.CharField(max_length=50, null=False, blank=False)
+>>>>>>> a12e047... worked on inseration module
 
 class Account(models.Model):
     title = models.CharField(max_length=50)
@@ -47,6 +61,7 @@ class Account(models.Model):
         ('FE', 'Female'),
     )
 
+<<<<<<< HEAD
     objects = InserationManager()
     REQUIRED_FIELDS = (
         'username', 'password',
@@ -63,3 +78,5 @@ class Account(models.Model):
 
     def has_module_perms(self, app_label):
         return True
+=======
+>>>>>>> a12e047... worked on inseration module
