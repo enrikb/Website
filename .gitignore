@@ -94,4 +94,13 @@ local_settings.py
 db.sqlite3
 
 ## venv ##
+<<<<<<< HEAD
 /GreenClothaWay/venv/
+=======
+/GreenClothaWay/src/venv/
+
+## static ##
+/GreenClothaWay/src/static/
+
+## .idea ##
+/.idea/
