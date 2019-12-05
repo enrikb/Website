@@ -5,6 +5,8 @@ from django.db import models
 
 AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
+CATEGORY_CHOICES = []
+
 
 class InserationManager(models.Manager):
 
@@ -35,6 +37,7 @@ class InserationManager(models.Manager):
         return inseration
 
 
+<<<<<<< HEAD
 class Inseration(models.Model):
     inserter = models.ForeignKey(AUTH_USER_MODEL, related_name='inserted_object', verbose_name=_("Inserter"),
                                  on_delete=models.CASCADE)
@@ -44,9 +47,24 @@ class Inseration(models.Model):
     subcategory = models.CharField(max_length=50,null=False, blank=False)
     category = models.CharField(max_length=50,null=False, blank=False)
     size = models.CharField(max_length=50, null=False, blank=False)
+=======
+<<<<<<< HEAD
+=======
+class Inseration(models.Model):
+    inserter = models.ForeignKey(AUTH_USER_MODEL, related_name='inserted_object', verbose_name=_("Inserter"),
+                                 on_delete=models.CASCADE)
+    title = models.CharField(max_length=50, null=False, blank=False)
+    description = models.TextField(max_length=500, null=False, blank=False)
+    images = models.ImageField(upload_to='images/', max_length=50, null=False, blank=False)
+    subcategory = models.CharField(max_length=50, null=False, blank=False)
+    category = models.CharField(max_length=50, null=False, blank=False, choices=CATEGORY_CHOICES)
+    size = models.CharField(max_length=50, null=False, blank=False)
+>>>>>>> a12e047... worked on inseration module
+>>>>>>> 2b4b6af1a3d507fb716183ea02ad7d1150381a8c
 
     inserted_at = models.DateTimeField(_("inserted_at"), auto_now_add=True)
 
+<<<<<<< HEAD
     objects = InserationManager()
 
     def save(self, **kwargs):
@@ -69,3 +87,10 @@ class Inseration(models.Model):
 
 
 
+<<<<<<< HEAD
+=======
+    def has_module_perms(self, app_label):
+        return True
+=======
+>>>>>>> a12e047... worked on inseration module
+>>>>>>> 2b4b6af1a3d507fb716183ea02ad7d1150381a8c

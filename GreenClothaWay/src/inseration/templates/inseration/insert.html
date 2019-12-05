@@ -1,6 +1,7 @@
 {% extends 'marketplace/layout.html' %}
 {% load static %}
 {% load bootstrap4 %}
+<<<<<<< HEAD
 {% block content %} <main class="page pricing-table-page">
         <section>
             <form method="post">
@@ -37,4 +38,52 @@
                 </form>
         </section>
     </main>
+=======
+{% block content %}
+<main class="page pricing-table-page">
+    <section>
+        <form method="post">
+            <div class="container" style="margin-top: 20px;">
+                <div class="block-heading" style="padding-top: 30px;margin: 10px 0px;">
+                    <h2 class="text-left text-info">Give your clothes away</h2>
+                    <p class="text-left" style="margin-bottom: 20px;">Insert your old clothes to reduce CO²</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <h2>Select a Title</h2>
+                        {% bootstrap_field insert_form.title show_label=False %}
+                        <h3>Write a short Description</h3>
+                        {% bootstrap_field insert_form.description show_label=False %}
+
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select a size</h4>
+                                {% bootstrap_field insert_form.size show_label=False %}
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select images</h4>
+                                {% bootstrap_field insert_form.images show_label=False %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select a category</h4>
+                                {% bootstrap_field insert_form.category show_label=False %}
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <h4>Select a category</h4>
+                                {% bootstrap_field insert_form.subcategory show_label=False %}
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit" style="margin-bottom: 20px ">
+                            Insert
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </form>
+    </section>
+</main>
+>>>>>>> 2b4b6af1a3d507fb716183ea02ad7d1150381a8c
 {% endblock %}
