@@ -6,7 +6,7 @@ from django.db import models
 from account.models import Account
 
 
-CATEGORY_CHOICES = ['top']
+CATEGORY_CHOICES = ('top')
 SUBCATEGORY_CHOICES = []
 
 class InserationManager(models.Manager):
