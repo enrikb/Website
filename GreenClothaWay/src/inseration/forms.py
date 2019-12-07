@@ -1,23 +1,21 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 
 from .models import Inseration
 
 
-class InsertionForm(forms.ModelForm):
-    email = forms.EmailField(max_length=60, help_text='Required. Add a valid email address')
+class InserationForm(forms.ModelForm):
+    images = forms.ImageField()
 
     class Meta:
         model = Inseration
-        fields = ('title', 'description', 'category', 'subcategory', 'size', 'images')
+        fields = ('title', 'description', 'category', 'subcategory', 'size', 'images',)
 
 
-class InsertionUpdateForm(forms.ModelForm):
-
+class InserationUpdateForm(forms.ModelForm):
     class Meta:
         model = Inseration
-        fields = ('title', 'description', 'category',  'subcategory', 'size', 'images')
+        fields = ('title', 'description', 'category', 'subcategory', 'size', 'images',)
 
     def remove_insertion(self):
         if self.is_valid():

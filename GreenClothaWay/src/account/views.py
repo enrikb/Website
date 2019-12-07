@@ -18,11 +18,11 @@ def register_view(request):
         if register_form.is_valid():
             register_form.save()
             email = register_form.cleaned_data['email']
-            raw_password = register_form.cleaned_data.get('password')
+            raw_password = register_form.cleaned_data.get('password1')
             user = authenticate(request, email=email, password=raw_password)
             if user:
                 login(request, user)
-                return redirect(reverse('profile'))
+                return redirect('profile')
         else:
             context['register_form'] = register_form
     else:

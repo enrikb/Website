@@ -1,23 +1,21 @@
-from django.shortcuts import render
-
-# Create your views here.
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
 from django.urls import reverse
 
-from .forms import InsertionForm
 
+from .forms import InserationForm
 
 def insert_view(request):
     context = {}
     if not request.user.is_authenticated:
-        redirect('login')
+        return redirect(reverse('login'))
     if request.method == "POST":
-        insert_form = InsertionForm(request.POST)
+        insert_form = InserationForm(request.POST, request.FILES)
         if insert_form.is_valid():
-            insert_form.save()
+            form = insert_form.save(commit=False)
+            form.inserter = request.user
+            form.save()
+            return redirect('index')
     else:
-        insert_form = InsertionForm()
+        insert_form = InserationForm()
     context['insert_form'] = insert_form
     return render(request, 'inseration/insert.html', context)

@@ -3,18 +3,17 @@ from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
 
-AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
+from account.models import Account
+
 
 CATEGORY_CHOICES = []
-
+SUBCATEGORY_CHOICES = []
 
 class InserationManager(models.Manager):
 
-    def create_inseration(self, user, title, description, images, category, subcategory, size):
+    def create_inseration(self, title, description, images, category, subcategory, size):
         if not title:
             raise ValueError("Users must have an email address")
-        if not user:
-            raise ValueError("Users must have a user")
         if not images:
             raise ValueError("Users must have a password")
         if not category:
@@ -23,16 +22,13 @@ class InserationManager(models.Manager):
             raise ValueError("Users must have an first name")
 
         inseration = self.model(
-            user=user,
             title=title,
             description=description,
             images=images,
             category=category,
             subcategory=subcategory,
             size=size,
-            inserted_at=datetime.now,
         )
-
         inseration.save(using=self._db)
         return inseration
 
@@ -51,8 +47,7 @@ class Inseration(models.Model):
 <<<<<<< HEAD
 =======
 class Inseration(models.Model):
-    inserter = models.ForeignKey(AUTH_USER_MODEL, related_name='inserted_object', verbose_name=_("Inserter"),
-                                 on_delete=models.CASCADE)
+    inserter = models.ForeignKey(Account, on_delete=models.CASCADE)
     title = models.CharField(max_length=50, null=False, blank=False)
     description = models.TextField(max_length=500, null=False, blank=False)
     images = models.ImageField(upload_to='images/', max_length=50, null=False, blank=False)
@@ -67,10 +62,6 @@ class Inseration(models.Model):
 <<<<<<< HEAD
     objects = InserationManager()
 
-    def save(self, **kwargs):
-        if not self.id:
-            self.inserted_at = timezone.now()
-        super(Inseration, self).save(**kwargs)
 
     def inseration_count_for(user):
         """
@@ -83,6 +74,7 @@ class Inseration(models.Model):
         ordering = ['-inserted_at']
         verbose_name = _("Insertion")
         verbose_name_plural = _("Insertions")
+<<<<<<< HEAD
 
 
 
@@ -94,3 +86,5 @@ class Inseration(models.Model):
 =======
 >>>>>>> a12e047... worked on inseration module
 >>>>>>> 2b4b6af1a3d507fb716183ea02ad7d1150381a8c
+=======
+>>>>>>> 2081c79... worked on inseration, works now

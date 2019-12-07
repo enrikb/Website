@@ -42,7 +42,8 @@
 {% block content %}
 <main class="page pricing-table-page">
     <section>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
             <div class="container" style="margin-top: 20px;">
                 <div class="block-heading" style="padding-top: 30px;margin: 10px 0px;">
                     <h2 class="text-left text-info">Give your clothes away</h2>
@@ -75,7 +76,8 @@
                                 {% bootstrap_field insert_form.subcategory show_label=False %}
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-block" type="submit" style="margin-bottom: 20px ">
+                        <button class="btn btn-primary btn-block" type="submit"
+                                style="margin-top: 50px; margin-bottom: 20px; ">
                             Insert
                         </button>
                     </div>
