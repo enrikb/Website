@@ -1,0 +1,30 @@
+{% extends 'marketplace/layout.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+<main class="page blog-post-list">
+    <section class="clean-block clean-blog-list dark">
+        <div class="container">
+            <div class="block-heading" style="padding-top: 30px;margin: 10px 0px;">
+                <h2 class="text-left text-info" style="margin-bottom: 0px;">Your Profile</h2>
+                <p class="text-left" style="margin: 0px;">View all information about your account</p>
+            </div>
+            <div class="block-content" style="padding: 7px;padding-top: 7px;">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <p><a href="{% url 'profile' %}">Profile</a></p>
+                        <p><a href="{% url 'messages_redirect' %}">Messages</a></p>
+                        <p><a href="{% url 'profile/inserations' %}">Inserations</a></p>
+                        <p><a href="#about">Settings</a></p>
+                    </div>
+                    <div class="col-lg-10">
+                    {% block accountcontent %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+

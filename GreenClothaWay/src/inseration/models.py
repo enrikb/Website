@@ -6,8 +6,14 @@ from django.db import models
 from account.models import Account
 
 
-CATEGORY_CHOICES = []
-SUBCATEGORY_CHOICES = []
+
+CATEGORY_CHOICES = (
+                    ('Top', 'Top'),
+                   )
+SUBCATEGORY_CHOICES = (
+                        ('T-Shirt', 'T-Shirt'),
+                      )
+
 
 class InserationManager(models.Manager):
 

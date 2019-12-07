@@ -1,177 +1,139 @@
-{% extends 'marketplace/layout.html' %}
+{% extends 'account/base.html' %}
 {% load static %}
 {% load bootstrap4 %}
-{% block content %}
+{% block accountcontent %}
 <style>
 
 </style>
-<main class="page blog-post-list">
-    <section class="clean-block clean-blog-list dark">
-        <div class="container">
-            <div class="block-heading" style="padding-top: 30px;margin: 10px 0px;">
-                <h2 class="text-left text-info" style="margin-bottom: 0px;">Your Profile</h2>
-                <p class="text-left" style="margin: 0px;">View all information about your account</p>
+<div class="row">
+    <div class="col-lg-5"><img class="rounded img-fluid" src="tech/image4.jpg" style="padding: 40px;"/></div>
+    <div class="col-lg-7">
+        <h3 style="margin: 10px 10px;">{{request.user.first_name}} {{request.user.last_name}}</h3>
+        <div class="info"></div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center">Inserations</p>
             </div>
-            <div class="block-content" style="padding: 7px;padding-top: 7px;">
+            <div class="col">
+                <p class="text-center">CO² reduction</p>
+            </div>
+            <div class="col">
+                <p class="text-center">Gave Away´s</p>
+            </div>
+            <div class="col">
+                <p class="text-center">Rating</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center">{{request.user.inserations}}</p>
+            </div>
+            <div class="col">
+                <p class="text-center">{{request.user.co2}}</p>
+            </div>
+            <div class="col">
+                <p class="text-center">{{request.user.sells}}</p>
+            </div>
+            <div class="col">
+                <p class="text-center">{{request.user.rating}}</p>
+            </div>
+        </div>
+        <p>Through your activity on GreenClothaWay you sdadspoküda d dsak da ölksd salkj dkjsa dsa dsadlkj lkjdsaj
+            dslkjdsalkj dsalkj dsalkj dsa lkdsalkj dsalkj dsalkj dsalkj lkjdsalkj dsalkjlkj dsalkjlkj dsalkjlkj
+            dsalkjlkj lkjdsalkj lkjdsalkj
+            dsa</p>
+    </div>
+</div>
+<div class="block-content" style="padding: 7px;padding-top: 7px;">
+    <h3 style="margin: 10px 10px;">Profile Information</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
                 <div class="row">
-                    <div class="col-lg-5"><img class="rounded img-fluid" src="tech/image4.jpg" style="padding: 40px;" /></div>
-                   <div class="col-lg-7">
-                        <h3 style="margin: 10px 10px;">{{request.user.first_name}} {{request.user.last_name}}</h3>
-                        <div class="info"></div>
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-center">Inserations</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center">CO² reduction</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center">Gave Away´s</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center">Rating</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-center">{{request.user.inserations}}</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center">{{request.user.co2}}</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center">{{request.user.sells}}</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center">{{request.user.rating}}</p>
-                            </div>
-                        </div>
-                        <p>Through your activity on GreenClothaWay you sdadspoküda d dsak da ölksd salkj dkjsa dsa dsadlkj lkjdsaj dslkjdsalkj dsalkj dsalkj dsa lkdsalkj dsalkj dsalkj dsalkj lkjdsalkj dsalkjlkj dsalkjlkj dsalkjlkj dsalkjlkj lkjdsalkj lkjdsalkj
-                            dsa</p>
+                    <div class="col-lg-4">
+                        <p class="text-form-center">Username</p>
+                    </div>
+                    <div class="col">
+                        {% bootstrap_field account_form.username show_label=False %}
                     </div>
                 </div>
-                <div class="block-content" style="padding: 7px;padding-top: 7px;">
-                    <h3 style="margin: 10px 10px;">Profile Information</h3>
-                     <form method="post">
-                              {% csrf_token %}
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">Username</p>
-                                </div>
-                                <div class="col">
-                                    {% bootstrap_field account_form.username show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">Email</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.email show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">First Name</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.first_name show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">Last Name</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.last_name show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                 <div class="col-lg-6">
-                                    <button class="btn btn-primary btn-block" type="submit">Save Changes</button>
-                                </div>
-                                <div class="col-lg-6">
-                                    <a class="btn btn-primary btn-block" href="{% url 'profile' %}">Cancel</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">Street</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.street show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">House Number</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.housenumber show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">Zip Code</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.plz show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">City</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.city show_label=False %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-form-center">Country</p>
-                                </div>
-                                <div class="col-lg-8">
-                                    {% bootstrap_field account_form.country show_label=False %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     </form>
-                </div>
-            </div>
-            <div class="block-content" style="padding: 7px;">
-                <h2 class="text-left text-info" style="margin-bottom: 0px;padding: 10px;">Your Inserations</h2>
-                <div class="row" style="padding: 0px;">
-                    <div class="col"><img class="rounded img-fluid" src="tech/image4.jpg" />
-                        <p class="text-center">Paragraph</p>
-                    </div>
-                    <div class="col"><img class="rounded img-fluid" src="tech/image4.jpg" />
-                        <p class="text-center">Paragraph</p>
-                    </div>
-                    <div class="col"><img class="rounded img-fluid" src="tech/image4.jpg" />
-                        <p class="text-center">Paragraph</p>
-                    </div>
-                </div>
-            </div>
-            <div class="block-content" style="padding: 7px;">
-                <h2 class="text-left text-info" style="margin-bottom: 0px;">Your Inserations</h2>
                 <div class="row">
-                    <div class="col"><img class="rounded img-fluid" src="tech/image4.jpg" />
-                        <p class="text-center">Paragraph</p>
+                    <div class="col-lg-4">
+                        <p class="text-form-center">Email</p>
                     </div>
-                    <div class="col"><img class="rounded img-fluid" src="tech/image4.jpg" />
-                        <p class="text-center">Paragraph</p>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.email show_label=False %}
                     </div>
-                    <div class="col"><img class="rounded img-fluid" src="tech/image4.jpg" />
-                        <p class="text-center">Paragraph</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">First Name</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.first_name show_label=False %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">Last Name</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.last_name show_label=False %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <button class="btn btn-primary btn-block" type="submit">Save Changes</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="btn btn-primary btn-block" href="{% url 'profile' %}">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">Street</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.street show_label=False %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">House Number</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.housenumber show_label=False %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">Zip Code</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.plz show_label=False %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">City</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.city show_label=False %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-form-center">Country</p>
+                    </div>
+                    <div class="col-lg-8">
+                        {% bootstrap_field account_form.country show_label=False %}
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</main>
+    </form>
+</div>
 {% endblock %}

@@ -1,7 +1,8 @@
 {% extends "django_messages/base.html" %}
 {% load i18n %}
-
-{% block content %}
+{% load static %}
+{% load bootstrap4 %}
+{% block mailcontent %}
 <h1>{% trans "View Message" %}</h1>
 <dl class="message-headers">
     <dt>{% trans "Subject" %}</dt>
