@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-
+from django.http import HttpResponseRedirect
 from django.contrib import admin
 from django.urls import path, include
 
@@ -40,6 +40,7 @@ from inseration.views import (
     insert_view,
 )
 urlpatterns = [
+    path(r'', lambda r: HttpResponseRedirect('index/')),
     path('admin/', admin.site.urls),
     path('register/', register_view, name="register"),
     path('logout/', logout_view, name="logout"),
