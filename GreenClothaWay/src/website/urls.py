@@ -40,6 +40,7 @@ from inseration.views import (
     insert_view,
 )
 urlpatterns = [
+    path(r'', lambda r: HttpResponseRedirect('index/')),
     path('admin/', admin.site.urls),
     path('register/', register_view, name="register"),
     path('logout/', logout_view, name="logout"),
