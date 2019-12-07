@@ -118,3 +118,18 @@ def profile_edit_view(request):
     context['account_form'] = form
 
     return render(request, 'account/edit.html', context)
+
+
+@login_required
+def profile_inserations(request):
+    if not request.user.is_authenticated:
+        return redirect("login")
+    else:
+        return render(request, 'account/inserations.html')
+
+@login_required
+def profile_messages(request):
+    if not request.user.is_authenticated:
+        return redirect("login")
+    else:
+        return render(request, '.html')

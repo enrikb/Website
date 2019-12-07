@@ -6,12 +6,21 @@ from django.db import models
 from account.models import Account
 
 
+<<<<<<< HEAD
 CATEGORY_CHOICES = ( 
+=======
+
+CATEGORY_CHOICES = (
+>>>>>>> f143a88... #GCW-25 work Development 2h created message view, edited profile view
                     ('Top', 'Top'),
                    )
 SUBCATEGORY_CHOICES = (
                         ('T-Shirt', 'T-Shirt'),
                       )
+<<<<<<< HEAD
+=======
+
+>>>>>>> f143a88... #GCW-25 work Development 2h created message view, edited profile view
 
 class InserationManager(models.Manager):
 

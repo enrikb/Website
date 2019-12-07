@@ -24,7 +24,8 @@ from account.views import (
     member_view,
     logout_view,
     profile_view,
-    profile_edit_view
+    profile_edit_view,
+    profile_inserations
 )
 
 
@@ -50,7 +51,8 @@ urlpatterns = [
     path('shoppingcart/', cart_view, name='cart'),
     path('profile/', profile_view, name='profile'),
     path('profile/edit/', profile_edit_view, name='profile/edit'),
-    path('messages/', include('django_messages.urls')),
+    path('profile/messages/', include('django_messages.urls'), name="messages"),
     path('insert/', insert_view, name='insert'),
+    path('profile/inserations/', profile_inserations, name='profile/inserations'),
 
 ]
