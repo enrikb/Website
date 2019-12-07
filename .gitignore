@@ -101,3 +101,5 @@ db.sqlite3
 
 ## .idea ##
 /.idea/
+
+.*0001_initial.py
