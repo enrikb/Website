@@ -7,7 +7,7 @@ from account.models import Account
 
 
 CATEGORY_CHOICES = ('top')
-SUBCATEGORY_CHOICES = []
+SUBCATEGORY_CHOICES = ()
 
 class InserationManager(models.Manager):
 
