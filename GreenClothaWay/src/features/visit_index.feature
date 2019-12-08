@@ -5,7 +5,6 @@ Feature: visit /index
   Scenario: visit /index successfully
     When i visit page /index
     Then the url is /index
-    And i see /index page
     And the page contains clothes
 
 #  Scenario: visit /index without succes
