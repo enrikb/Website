@@ -105,7 +105,7 @@ This document is designed for internal use only and will outline the development
 | ----------------------------------------------------------------------------------------------------- | ---------- |
 | [Blog](https://blog.greenclothaway.eu/)                                                               | 14/10/2019 |
 | [GitHub](https://github.com/GreenClothaWay/Website)                                                   | 14/10/2019 |
-| [YoutTrack](https://youtrack.greenclothaway.eu)                                                       | 19/10/2019 |
+| [YoutTrack](https://greenclothaway.myjetbrains.com/youtrack)                                          | 19/10/2019 |
 | [Django](https://djangoproject.com/)                                                                  | 19/10/2019 |
 | [Bootstrap](https://getbootstrap.com/)                                                                | 21/10/2019 |
 
