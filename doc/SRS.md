@@ -184,7 +184,7 @@ Log In:
 
 Inserting clothes is very easy. Take some pictures from your garment and fill in the product description form. 
 The product description form includes information about size, form, colour, condition, etc.
--   [Insert clothes](https://greenclothaway.eu/....)
+-   [Insert clothes](https://greenclothaway.eu/insert)
 
 
 #### 3.2.4 Buy clothes
