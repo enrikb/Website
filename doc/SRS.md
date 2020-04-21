@@ -170,11 +170,11 @@ Clothes on which a user swiped yes will be added to a seperate overview.
 At registration, the data provided by the user is stored in the backend. After registration users can order and insert clothes.
 
 Sign Up:
--   [Sign UP](https://greenclothaway.eu/.....)
+-   [Sign UP](https://greenclothaway.eu/register)
 -   [UC](https://github.com/GreenClothaWay/Website/blob/master/doc/uc/CreateAccountUseCase.md) 
 
 Log In:
--   [Log In](https://greenclothaway.eu/.....)
+-   [Log In](https://greenclothaway.eu/login)
 
 #### 3.2.2 Specific Product Information
 
