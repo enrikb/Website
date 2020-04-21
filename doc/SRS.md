@@ -125,7 +125,7 @@ They have only to pay shipping costs or if it´s possible they can pick up the c
 
 Our Use-Case-Diagram
 
-![UsecaseDiagram](doc/GCW_UML.png)
+![UsecaseDiagram](https://github.com/GreenClothaWay/Website/blob/master/doc/GCW_UML.png)
 
 ### 2.3 User characteristics
 
