@@ -31,7 +31,7 @@ This includes:
 ##### 2.1.1.1 Activity Diagram
 ![WriteMessageUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/WriteMessageUseCase.PNG)
 ##### 2.1.1.2 Mock up
-![WriteMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/WriteMessageMockup.jpeg)
+![WriteMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/WriteMessageMockup.PNG)
 
 
 #### 2.1.2 Delete Message
@@ -40,7 +40,7 @@ This includes:
 ##### 2.1.2.1 Activity Diagram
 ![DeleteMessageUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/DeleteMessageUseCase.PNG)
 ##### 2.1.2.2 Mock up
-![DeleteMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/DeleteMessageMockup.jpeg)
+![DeleteMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/DeleteMessageMockup.PNG)
 
 
 
@@ -50,7 +50,7 @@ This includes:
 ##### 2.1.3.1 Activity Diagram
 ![ReadMessageUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/ReadMessageUseCase.PNG)
 ##### 2.1.3.2 Mock up
-![ReadMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/ReadMessageMockup.jpeg)
+![ReadMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/ReadMessageMockup.PNG)
 
 
 #### 2.1.4 Restore Deleted Message
@@ -61,7 +61,7 @@ This includes:
 ##### 2.1.4.1 Activity Diagram
 ![RestoreMessageUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/RestoreMessageUseCase.PNG)
 ##### 2.1.4.2 Mock up
-![RestoreMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/RestoreMessageMockup.jpeg)
+![RestoreMessageMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/RestoreMessageMockup.PNG)
 
 
 
