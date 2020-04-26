@@ -23,7 +23,6 @@ This use case allows the user to view all products he inserted.
 #### 2.1.1 Activity Diagram
 ![ViewPlacedProductsUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/ViewPlacedProductsUseCase.PNG)
 #### 2.1.2 Mock up
-##### Register
 ![ViewPlacedProductsMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/ViewPlacedProductsMockup.PNG)
 ### 2.2 Alternative Flows
 n/a
