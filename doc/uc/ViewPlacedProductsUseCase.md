@@ -21,10 +21,10 @@ This use case allows the user to view all products he inserted.
 ### 2.1 Basic Flow
 - User clicks "Inserations" on profile page
 #### 2.1.1 Activity Diagram
-![CreateAccountUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/ViewPlacedProductsUseCase.PNG)
+![ViewPlacedProductsUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/ViewPlacedProductsUseCase.PNG)
 #### 2.1.2 Mock up
 ##### Register
-![CreateAccountMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/ViewPlacedProductsMockup.jpeg)
+![ViewPlacedProductsMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/ViewPlacedProductsMockup.PNG)
 ### 2.2 Alternative Flows
 n/a
 
