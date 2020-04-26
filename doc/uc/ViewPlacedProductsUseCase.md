@@ -1,7 +1,7 @@
 ## Revision History
 Date | Version | Description | Author
 --- | --- | --- | ---
-26.10.19 | 1.0 | First release of the UC | Nico Diefenbacher
+26.4.2020| 1.0 | First release of the UC | Zeno Berkhan
 
 ## Table of Contents
 - [1. Use Case View Placed Products](#1-use-case-view_placed-products)
