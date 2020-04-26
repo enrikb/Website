@@ -24,7 +24,6 @@ This use case allows users to filter prdoucts.
 #### 2.1.1 Activity Diagram
 ![FilterProductsUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/FilterProductsUseCase.PNG)
 #### 2.1.2 Mock up
-##### Register
 ![FilterProductsMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/FilterProductsMockup.PNG)
 ### 2.2 Alternative Flows
 n/a
