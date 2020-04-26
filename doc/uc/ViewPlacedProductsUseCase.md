@@ -4,7 +4,7 @@ Date | Version | Description | Author
 26.4.2020| 1.0 | First release of the UC | Zeno Berkhan
 
 ## Table of Contents
-- [1. Use Case View Placed Products](#1-use-case-view_placed-products)
+- [1. Use Case View Placed Products](#1-use-case-view-placed-products)
   - [1.1 Brief Description](#11-brief-description)
 - [2. Flow of Events](#2-flow-of-events)
   - [2.1 Basic Flow](#21-basic-flow)
