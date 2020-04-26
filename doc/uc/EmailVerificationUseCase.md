@@ -25,8 +25,8 @@ This use case allows users to get their email verified during account creation.
 #### 2.1.1 Activity Diagram
 ![EmailVerificationUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/EmailVerificationUseCase.PNG)
 #### 2.1.2 Mock up
-##### Register
-![EmailVerificationMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/EmailVerificationMockup.PNG)
+![EmailVerification1Mockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/EmailVerificationMockup1.PNG)
+![EmailVerification2Mockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/EmailVerificationMockup2.PNG)
 ### 2.2 Alternative Flows
 n/a
 
