@@ -23,7 +23,6 @@ This use case allows users to see all prdoucts. In other words to go shopping.
 #### 2.1.1 Activity Diagram
 ![ViewAllProductsUseCase](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/uc/ViewAllProductsUseCase.PNG)
 #### 2.1.2 Mock up
-##### Register
 ![ViewAllProductsMockup](https://raw.githubusercontent.com/GreenClothaWay/Website/master/doc/mockups/ViewAllProductsMockup.PNG)
 ### 2.2 Alternative Flows
 n/a
