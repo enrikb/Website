@@ -43,4 +43,4 @@ n/a
 If a user completes this workflow, the users profile must have been created on the server. 
 
 ## 6. Extension Points
-n/a
+Test: [.feature file](https://github.com/GreenClothaWay/Website/blob/master/GreenClothaWay/src/features/test_register.feature)
