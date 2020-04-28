@@ -84,7 +84,7 @@ The following graphic describes the overall class organization of the backend.
 tba
 
 ## 7. Deployment View  
-tba
+![Deployment-View](/doc/DeploymentView.PNG)
 
 ## 8. Implementation View
 tba
