@@ -93,7 +93,8 @@ tba
 ### 8.2 Layers
 tba
 
-## 9. Data Viewtba
+## 9. Data View
+tba
 
 ## 10. Size and Performance
 tbd
