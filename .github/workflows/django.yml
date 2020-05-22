@@ -24,4 +24,5 @@ jobs:
     - name: Run Tests
       run: |
         cd GreenClothaWay/src/
+        mv website/settings_unittest.py website/settings.py
         python manage.py test -t .
