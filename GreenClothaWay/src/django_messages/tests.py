@@ -19,12 +19,14 @@ from .utils import get_user_model
 
 User = get_user_model()
 
+def create_user(username, email, password):
+    return User.objects.create_user(username, email, password, 'MA', 'first_name', 'last_name', 'street', 'housenumber', 'plz', 'city', 'country');
 
 class SendTestCase(TestCase):
     def setUp(self):
-        self.user1 = User.objects.create_user(
+        self.user1 = create_user(
             'user1', 'user1@example.com', '123456')
-        self.user2 = User.objects.create_user(
+        self.user2 = create_user(
             'user2', 'user2@example.com', '123456')
         self.msg1 = Message(sender=self.user1, recipient=self.user2,
                             subject='Subject Text', body='Body Text')
@@ -43,9 +45,9 @@ class SendTestCase(TestCase):
 
 class DeleteTestCase(TestCase):
     def setUp(self):
-        self.user1 = User.objects.create_user(
+        self.user1 = create_user(
             'user3', 'user3@example.com', '123456')
-        self.user2 = User.objects.create_user(
+        self.user2 = create_user(
             'user4', 'user4@example.com', '123456')
         self.msg1 = Message(sender=self.user1, recipient=self.user2,
                             subject='Subject Text 1', body='Body Text 1')
@@ -90,8 +92,8 @@ class IntegrationTestCase(TestCase):
 
     def setUp(self):
         """ create 2 users and a test-client logged in as user_1 """
-        self.user_1 = User.objects.create_user(**self.T_USER_DATA[0])
-        self.user_2 = User.objects.create_user(**self.T_USER_DATA[1])
+        self.user_1 = create_user(**self.T_USER_DATA[0])
+        self.user_2 = create_user(**self.T_USER_DATA[1])
         self.c = Client()
         self.c.login(username=self.T_USER_DATA[0]['username'],
                      password=self.T_USER_DATA[0]['password'])
@@ -193,10 +195,10 @@ class InboxCountTestCase(TestCase):
     def setUp(self):
         self.factory = RequestFactory()
         self.anonymous_user = AnonymousUser()
-        self.user = User.objects.create_user(
+        self.user = create_user(
             username='test_user', email='test@example.com', password='secret'
         )
-        self.user_2 = User.objects.create_user(
+        self.user_2 = create_user(
             username='test_user_2', email='test2@example.de', password='secret'
         )
         Message.objects.create(
@@ -243,9 +245,9 @@ class InboxCountTestCase(TestCase):
 
 class RecipientFilterTestCase(TestCase):
     def setUp(self):
-        self.user1 = User.objects.create_user(
+        self.user1 = create_user(
             'user1', 'user1@example.com', '123456')
-        self.user2 = User.objects.create_user(
+        self.user2 = create_user(
             'user2', 'user2@example.com', '123456')
         self.user2.is_active = False
         self.user2.save()
@@ -265,7 +267,7 @@ class RecipientFilterTestCase(TestCase):
             recipient_filter=self.f
         )
         assert not form.is_valid()
-        assert self.user2.username in force_text(form.errors)
+        assert self.user2.email in force_text(form.errors)
 
     def testRecipientFilterMixed(self):
         form = ComposeForm(
@@ -273,4 +275,4 @@ class RecipientFilterTestCase(TestCase):
             recipient_filter=self.f
         )
         assert not form.is_valid()
-        assert self.user2.username in force_text(form.errors)
+        assert self.user2.email in force_text(form.errors)
