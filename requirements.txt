@@ -1,0 +1,8 @@
+django
+bootstrap4
+django_extensions
+behave_django
+psycopg2
+Pillow
+django_messages
+django-bootstrap4
