@@ -1,8 +1,7 @@
 from website.settings_default import *
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# see django doc for generating secrete key and do it
-SECRET_KEY = ''
+# SECURITY WARNING: just a trivial key for untittests
+SECRET_KEY = '01234567890123456789012345678901234567890123456789'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
